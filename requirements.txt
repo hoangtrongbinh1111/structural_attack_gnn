@@ -4,10 +4,6 @@ aiosignal==1.3.2
 annotated-types==0.7.0
 async-timeout==5.0.1
 attrs==25.3.0
-Brotli @ file:///C:/b/abs_c415aux9ra/croot/brotli-split_1736182803933/work
-certifi @ file:///C:/b/abs_3beajm7umk/croot/certifi_1745939228545/work/certifi
-charset-normalizer @ file:///croot/charset-normalizer_1721748349566/work
-colorama @ file:///C:/b/abs_a9ozq0l032/croot/colorama_1672387194846/work
 dgl==2.2.1+cu118
 filelock==3.18.0
 frozenlist==1.6.0
@@ -17,25 +13,20 @@ Jinja2==3.1.6
 joblib==1.5.0
 MarkupSafe==3.0.2
 mkl-service==2.4.0
-mkl_fft @ file:///C:/Users/dev-admin/mkl/mkl_fft_1730823082242/work
-mkl_random @ file:///C:/Users/dev-admin/mkl/mkl_random_1730822522280/work
 mpmath==1.3.0
 multidict==6.4.4
-networkx @ file:///C:/b/abs_b054htfn9t/croot/networkx_1737043671910/work
+networkx==3.4.2
 numpy==1.26.4
 packaging==25.0
 pandas==2.2.3
 pillow==11.0.0
 propcache==0.3.1
-psutil @ file:///C:/b/abs_b5gv3mn55h/croot/psutil_1736371546320/work
 pydantic==2.11.5
 pydantic_core==2.33.2
 pyparsing==3.2.3
-PySocks @ file:///C:/ci_310/pysocks_1642089375450/work
 python-dateutil==2.9.0.post0
 pytz==2025.2
 PyYAML==6.0.2
-requests @ file:///C:/b/abs_c3508vg8ez/croot/requests_1731000584867/work
 scikit-learn==1.6.1
 scipy==1.10.1
 six==1.17.0
@@ -46,10 +37,7 @@ torch-geometric==2.6.1
 torchaudio==2.1.2+cu118
 torchdata==0.7.1
 torchvision==0.16.2+cu118
-tqdm @ file:///C:/b/abs_0eh9b6xugj/croot/tqdm_1738945553987/work
 typing-inspection==0.4.1
 typing_extensions==4.13.2
 tzdata==2025.2
-urllib3 @ file:///C:/b/abs_7bst06lizn/croot/urllib3_1737133657081/work
-win-inet-pton @ file:///C:/ci_310/win_inet_pton_1642658466512/work
 yarl==1.20.0
