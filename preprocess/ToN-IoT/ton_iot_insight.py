@@ -1,8 +1,12 @@
 import pandas as pd
 import glob
 import os
+import shutil
 
 file_path = "../../datasets/ToN-IoT_raw/train_test_network.csv"
+if os.path.exists("../../datasets/ToN-IoT"):
+    shutil.rmtree("../../datasets/ToN-IoT")
+os.makedirs("../../datasets/ToN-IoT", exist_ok=True)
 
 try:
     print(f"Reading {file_path}")

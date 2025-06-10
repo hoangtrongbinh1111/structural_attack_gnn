@@ -1,6 +1,8 @@
 import pandas as pd
 import glob
 import os
+import shutil
+import tqdm
 
 # === BƯỚC 1: TÌM TẤT CẢ FILE .binetflow ===
 file_paths = glob.glob("../../datasets/CTU_raw/**/*.binetflow", recursive=True)
@@ -17,7 +19,10 @@ label_list = {
     "nsisay": 7
 }
 
-for file in file_paths:
+if os.path.exists("../../datasets/CTU"):
+    shutil.rmtree("../../datasets/CTU")
+
+for file in tqdm.tqdm(file_paths, desc="Processing files"):
     print(file)
     label_name = os.path.basename(file).replace('.binetflow','')
     try:
@@ -30,6 +35,8 @@ for file in file_paths:
         df_botnet = df[df['Label'] == 1]
         df_benign = df[df['Label'] == 0]
         
+        
+        os.makedirs("./datasets/CTU", exist_ok=True)
         # Save botnet flows
         botnet_file = '../../datasets/CTU/' + label_name + '.csv'
         if os.path.exists(botnet_file):
