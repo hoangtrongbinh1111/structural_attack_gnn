@@ -5,7 +5,7 @@ import shutil
 import tqdm
 
 # === BƯỚC 1: TÌM TẤT CẢ FILE .binetflow ===
-file_paths = glob.glob("../../datasets/CTU_raw/**/*.binetflow", recursive=True)
+file_paths = glob.glob("./datasets/CTU_raw/**/*.binetflow", recursive=True)
 
 df_all = pd.DataFrame()
 
@@ -19,8 +19,8 @@ label_list = {
     "nsisay": 7
 }
 
-if os.path.exists("../../datasets/CTU"):
-    shutil.rmtree("../../datasets/CTU")
+if os.path.exists("./datasets/CTU"):
+    shutil.rmtree("./datasets/CTU")
 
 for file in tqdm.tqdm(file_paths, desc="Processing files"):
     print(file)
@@ -38,7 +38,7 @@ for file in tqdm.tqdm(file_paths, desc="Processing files"):
         
         os.makedirs("./datasets/CTU", exist_ok=True)
         # Save botnet flows
-        botnet_file = '../../datasets/CTU/' + label_name + '.csv'
+        botnet_file = './datasets/CTU/' + label_name + '.csv'
         if os.path.exists(botnet_file):
             # Append to existing file
             df_botnet.to_csv(botnet_file, mode='a', header=False, index=False)
