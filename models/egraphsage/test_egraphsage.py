@@ -7,7 +7,7 @@ import torch as th
 import torch.nn.functional as F
 import networkx as nx
 
-from EGraphSAGE import EGraphSAGE
+from utils.EGraphSAGE import EGraphSAGE
 from sklearn.metrics import classification_report
 
 import timeit

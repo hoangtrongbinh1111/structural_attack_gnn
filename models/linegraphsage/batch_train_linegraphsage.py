@@ -12,7 +12,7 @@ import joblib
 
 from torch_geometric.nn import GraphSAGE
 from torch_geometric.loader import NeighborLoader
-from utils import from_dgl, create_graph, get_batch
+from utils.utils import from_dgl, create_graph, get_batch
 
 from sklearn.metrics import classification_report
 
@@ -35,7 +35,7 @@ parser.add_argument('--train', required=True,
 parser.add_argument('--test', required=True,
                     help="CSV file with test data",
                     dest="test_path")
-parser.add_argument('--savedir', default="./results/",
+parser.add_argument('--savedir', default="../../results/",
                     dest="save_dir", 
                     help="Directory for saving model and results")
 

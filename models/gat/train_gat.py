@@ -66,7 +66,7 @@ class GATEdgeClassifier(nn.Module):
 parser = argparse.ArgumentParser(description="Train GAT model")
 parser.add_argument('--train', required=True, help="CSV file with train data", dest="train_path")
 parser.add_argument('--test', required=True, help="CSV file with test data", dest="test_path")
-parser.add_argument('--savedir', default="./results/", dest="save_dir", help="Directory for saving model and results")
+parser.add_argument('--savedir', default="../../results/", dest="save_dir", help="Directory for saving model and results")
 args = parser.parse_args()
 
 # ----- Paths -----

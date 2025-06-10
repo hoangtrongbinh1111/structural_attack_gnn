@@ -2,7 +2,7 @@ import pandas as pd
 import glob
 import os
 
-file_path = "./datasets/ToN-IoT_raw/train_test_network.csv"
+file_path = "../../datasets/ToN-IoT_raw/train_test_network.csv"
 
 try:
     print(f"Reading {file_path}")
@@ -31,17 +31,17 @@ try:
     df_xss = df[df['type'] == 'xss']
 
     # Save attack flows
-    df_backdoor.to_csv('./datasets/ToN-IoT/backdoor.csv', index=False)
-    df_ddos.to_csv('./datasets/ToN-IoT/ddos.csv', index=False)
-    df_dos.to_csv('./datasets/ToN-IoT/dos.csv', index=False)
-    df_injection.to_csv('./datasets/ToN-IoT/injection.csv', index=False)
-    df_mitm.to_csv('./datasets/ToN-IoT/mitm.csv', index=False)
-    df_password.to_csv('./datasets/ToN-IoT/password.csv', index=False)
-    df_ransomware.to_csv('./datasets/ToN-IoT/ransomware.csv', index=False)
-    df_scanning.to_csv('./datasets/ToN-IoT/scanning.csv', index=False)
-    df_xss.to_csv('./datasets/ToN-IoT/xss.csv', index=False)
+    df_backdoor.to_csv('../../datasets/ToN-IoT/backdoor.csv', index=False)
+    df_ddos.to_csv('../../datasets/ToN-IoT/ddos.csv', index=False)
+    df_dos.to_csv('../../datasets/ToN-IoT/dos.csv', index=False)
+    df_injection.to_csv('../../datasets/ToN-IoT/injection.csv', index=False)
+    df_mitm.to_csv('../../datasets/ToN-IoT/mitm.csv', index=False)
+    df_password.to_csv('../../datasets/ToN-IoT/password.csv', index=False)
+    df_ransomware.to_csv('../../datasets/ToN-IoT/ransomware.csv', index=False)
+    df_scanning.to_csv('../../datasets/ToN-IoT/scanning.csv', index=False)
+    df_xss.to_csv('../../datasets/ToN-IoT/xss.csv', index=False)
     
     # Save benign flows
-    df_normal.to_csv('./datasets/ToN-IoT/benign_tot.csv', index=False)
+    df_normal.to_csv('../../datasets/ToN-IoT/benign_tot.csv', index=False)
 except Exception as e:
     print(f"❌ Lỗi đọc file: {e}")

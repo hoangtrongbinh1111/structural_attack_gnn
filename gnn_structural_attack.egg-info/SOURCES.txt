@@ -1,0 +1,12 @@
+README.md
+setup.py
+gnn_structural_attack.egg-info/PKG-INFO
+gnn_structural_attack.egg-info/SOURCES.txt
+gnn_structural_attack.egg-info/dependency_links.txt
+gnn_structural_attack.egg-info/top_level.txt
+test/test_cuda.py
+utils/EGraphSAGE.py
+utils/__init__.py
+utils/adversarial_feature.py
+utils/adversarial_structure.py
+utils/utils.py

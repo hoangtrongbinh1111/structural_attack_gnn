@@ -10,7 +10,7 @@ import networkx as nx
 
 from dgl.transforms import LineGraph
 from sklearn.metrics import classification_report
-from utils import from_dgl, create_graph, get_batch, get_batch_test
+from utils.utils import from_dgl, create_graph, get_batch, get_batch_test
 
 import timeit
 import argparse

@@ -8,7 +8,7 @@ import torch.nn.functional as F
 import networkx as nx
 import joblib
 
-from EGraphSAGE import EGraphSAGE
+from utils.EGraphSAGE import EGraphSAGE
 from sklearn.metrics import classification_report
 
 from sklearn import preprocessing
@@ -26,7 +26,7 @@ def compute_accuracy(pred, labels):
 parser = argparse.ArgumentParser(description="Train E-GraphSAGE model")
 parser.add_argument('--train', required=True, help="CSV file with train data", dest="train_path")
 parser.add_argument('--test', required=True, help="CSV file with test data", dest="test_path")
-parser.add_argument('--savedir', default="./results/", dest="save_dir", help="Directory for saving model and results")
+parser.add_argument('--savedir', default="../../results/", dest="save_dir", help="Directory for saving model and results")
 
 # args = parser.parse_args(['--train', 'preprocessed_data/ToN_IoT/ddos_train.csv',
 #                           '--test', 'preprocessed_data/ToN_IoT/ddos_test.csv'])

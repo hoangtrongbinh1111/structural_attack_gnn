@@ -1,13 +1,7 @@
 __pycache__/*
-datasets/CTU/*.csv
-datasets/CTU_raw/**/*
-datasets/CTU/extract.ipynb
-!datasets/CTU/data.zip
-datasets/ToN-IoT/*.csv
-datasets/ToN-IoT_raw/**/*
+datasets/**/*
 figures/*
-preprocessed_data/CTU/*.csv
-preprocessed_data/ToN_IoT/*.csv
+preprocessed_data/**/*
 results/**/*.pth
 results/**/*.skl
 results/**/*.csv

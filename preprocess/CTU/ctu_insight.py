@@ -3,7 +3,7 @@ import glob
 import os
 
 # === BƯỚC 1: TÌM TẤT CẢ FILE .binetflow ===
-file_paths = glob.glob("./datasets/CTU_raw/**/*.binetflow", recursive=True)
+file_paths = glob.glob("../../datasets/CTU_raw/**/*.binetflow", recursive=True)
 
 df_all = pd.DataFrame()
 
@@ -31,7 +31,7 @@ for file in file_paths:
         df_benign = df[df['Label'] == 0]
         
         # Save botnet flows
-        botnet_file = './datasets/CTU/' + label_name + '.csv'
+        botnet_file = '../../datasets/CTU/' + label_name + '.csv'
         if os.path.exists(botnet_file):
             # Append to existing file
             df_botnet.to_csv(botnet_file, mode='a', header=False, index=False)
