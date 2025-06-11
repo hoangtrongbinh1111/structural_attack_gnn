@@ -22,7 +22,7 @@ from tqdm.auto import tqdm
 parser = argparse.ArgumentParser(description="Test E-GraphSAGE model")
 # Naming convention: <attack>_test.csv
 parser.add_argument('--test', required=True, help="CSV file with test baseline data", dest="test_path")
-parser.add_argument('--savedir', default="../../results/", dest="save_dir", help="Directory for saving results")
+parser.add_argument('--savedir', default="results/", dest="save_dir", help="Directory for saving results")
 
 group = parser.add_mutually_exclusive_group()
 group.add_argument('--feature_attack', action='store_true', dest='feature_attack')
