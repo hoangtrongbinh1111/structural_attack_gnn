@@ -9,7 +9,7 @@ import sys
 parser = argparse.ArgumentParser(description="Preprocess IDS2017 data for GNN-Structural-Attack")
 parser.add_argument('--mal', required=True, help="CSV file for malicious netflows", dest="mal_data_path")
 parser.add_argument('--ben', required=True, help="CSV file for benign netflows", dest="ben_data_path")
-parser.add_argument('--savedir', default="./preprocessed_data/IDS2017/", dest="save_dir")
+parser.add_argument('--savedir', default="preprocessed_data/IDS2017/", dest="save_dir")
 parser.add_argument('--node_type', default='ip_port', choices=['ip_port', 'service_proto', 'conn_state'], 
                     help="Type of nodes to create in the graph")
 

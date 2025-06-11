@@ -9,7 +9,7 @@ import sys
 parser = argparse.ArgumentParser(description="Preprocess CTU data for E-GraphSAGE algorithm")
 parser.add_argument('--mal', required=True, help="CSV file for malicious netflows", dest="mal_data_path")
 parser.add_argument('--ben', required=True, help="CSV file for benign netflows", dest="ben_data_path")
-parser.add_argument('--savedir', default="../../preprocessed_data/CTU/", dest="save_dir")
+parser.add_argument('--savedir', default="preprocessed_data/CTU/", dest="save_dir")
 
 args = parser.parse_args()
 
