@@ -1,0 +1,13 @@
+# datasets, preprocessed splits and experiment outputs are not versioned
+datasets/
+data/
+runs/
+*.csv
+*.pkl
+*.pt
+*.joblib
+
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
