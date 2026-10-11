@@ -1,8 +1,6 @@
-# GuardNIDS-RR
+# GuardNIDS
 
-Code for **GuardNIDS-RR: Invariant-Key Evidence Routing for Robust Graph-Based Network Intrusion Detection**.
-
-GuardNIDS-RR is a graph NIDS (flows are edges between `IP:port` endpoints) that stays robust when an
+GuardNIDS is a graph NIDS (flows are edges between `IP:port` endpoints) that stays robust when an
 attacker pads its own flows or injects extra flows into the graph:
 
 1. **Invariant-key retrieval** – every flow retrieves its nearest neighbours from a reference set of
@@ -22,7 +20,7 @@ guardnids/
   data.py, graph.py        dataset conventions, flow graph construction
   invariance.py            attacker-controllable fields, invariant key
   physics.py               physically consistent flow padding
-  rr.py                    GuardNIDS-RR (retrieval + routed message passing)
+  rr.py                    GuardNIDS (retrieval + routed message passing)
   baselines.py             E-GraphSAGE, GNNGuard, E-GAT
   detectors.py             trained-model loading and prediction
   attacks/                 feature, structural and adaptive attacks
@@ -144,7 +142,7 @@ Add `--retrieval-only` on a GuardNIDS-RR run to score the graph-free control (ma
 scripts/run_scenario.sh data/CTU/seed2 menti 2
 scripts/run_scenario.sh data/ToN_IoT backdoor 1
 
-# GuardNIDS-RR ablations and the E-GAT backbone
+# GuardNIDS ablations and the E-GAT backbone
 scripts/run_ablations.sh data/CTU/seed1 menti 1
 
 # dataset x attack table (mean over seeds, then over scenarios)
